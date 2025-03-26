@@ -8,8 +8,8 @@
 :root {
   --primary-color: #bdbfbe;
   --secondary-color: #181818;
-  --text-h1: 3.2rem;
-  --text-p: 2rem;
+  --text-h1: 24px;
+  --text-p: 15px;
 }
 html {
   font-size: calc(100vw / 1920 * 10);
