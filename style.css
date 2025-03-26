@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --primary-color: #bdbfbe;
+  --secondary-color: #181818;
+  --text-h1: 3.2rem;
+  --text-p: 2rem;
+}
+html {
+  font-size: calc(100vw / 1920 * 10);
+  /* 1rem = 7.5px */
+}
+h1 {
+  font-size: var(--text-h1);
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
+}
+p,
+span {
+  font-size: var(--text-p);
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.innovation {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.innovation-wrapper {
+  height: 100%;
+  padding: 0 48px;
+}
+.innovation-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.innovation-bg-media {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+}
+.innovation-bg-figure {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+.innovation-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.innovation-slide h1 {
+  color: antiquewhite;
+}
+/* 1rem = 7.5px */
+.innovation-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 480px;
+  background-color: antiquewhite;
+}
+.innovation-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
+}
+.innovation-card-index {
+  height: var(--text-p);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+}
+.innovation-card-index-container {
+  overflow: hidden;
+}
+.innovation-card-index-container span {
+  display: block;
+}
+.innovation-card-heading {
+  height: var(--text-h1);
+  text-align: center;
+  overflow: hidden;
+}
+/* limit 5 row */
+.innovation-card-paragraph {
+  height: 90px;
+  text-align: center;
+  overflow: hidden;
+}
+.innovation-card-paragraph-container p {
+  height: 90px;
+}
+.innovation-card-thumbanil {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.innovation-card-thumbanil img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.innovation-card-paragraph-container,
+.innovation-card-heading-container,
+.innovation-card-index-container {
+  transition: transform 0.3s ease-in-out;
+}
